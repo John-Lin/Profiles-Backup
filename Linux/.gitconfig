@@ -1,0 +1,14 @@
+[user]
+	name = 林哲緯
+	email = ireri339@gmail.com
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+[apply]
+	whitespace = nowarn
+[color]
+	ui = true
+[core]
+	editor = vim
