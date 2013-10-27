@@ -1,0 +1,21 @@
+[user]
+	name = 林哲緯
+	email = ireri339@gmail.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/john/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree 2.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[apply]
+	whitespace = nowarn
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
