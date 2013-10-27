@@ -8,8 +8,15 @@
 # MacPorts Installer addition on 2013-02-08_at_16:06:46: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 export PATH=/usr/local/Cellar/ruby/1.9.3-p374/bin:$PATH
+
+BASH_GRAY="\[\e[1;30m\]"
+BASH_GREEN="\[\e[1;32m\]"
+BASH_ORANGE="\[\e[1;33m\]"
+BASH_WHITE="\[\e[1;0m\]"
+BASH_LIGHT_GRAY="\[\e[0;37m\]"
+BASH_CYAN="\[\033[1;36m\]"
+BASH_BLUE="\[\033[0;94m\]"
 
 # Show Git Branch in Command Line
 function git_branch {
@@ -17,9 +24,13 @@ function git_branch {
         echo "("${ref#refs/heads/}") ";
 }
 
-PS1="\[\033[1;32m\]\$(git_branch)\[\033[0m\]\h:\W $ " 
+PS1="${BASH_CYAN}\$(git_branch)${BASH_GREEN}\h${BASH_ORANGE}:\W ${BASH_WHITE}\$ "
 
+#PS1="\[\033[1;32m\]\$(git_branch)\[\033[0m\]\h:\W $ " 
 
+#Autocompletion (Must install bash-completion)
+#$ brew install bash-completion
+#cp /usr/local/etc/bash_completion.d/git-completion.bash ~/.git-bash-completion.sh
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
