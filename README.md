@@ -1,10 +1,22 @@
 Profiles-Backup
 ===============
 
-This is my Profiles Backup on Macbook Air.
+## Description
+This is my Profiles setting backup on **Mac** and **Linux Mint**.
 
-There are serveral profiles :
+## Content
+There are several profiles setting on **Mac**:
 
 - vimrc
 - bash_profile
 - gitconfig
+
+
+Setting on **Linux Mint**:
+
+- vimrc
+- bashrc
+- gitconfig
+
+
+
